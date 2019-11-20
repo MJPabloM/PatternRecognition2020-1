@@ -16,7 +16,6 @@ public class Main {
         y[1]= new int[]{0,1,0};
         y[2]= new int[]{0,0,1};
 
-
         Learnmatrix lm = new Learnmatrix(x,y,1);
         lm.aprendizaje();
         lm.mostrarM();
@@ -24,8 +23,6 @@ public class Main {
     }
     public static void cap(){
         ArrayList<Patron> conjFundamental = new ArrayList<>();
-        //conjFundamental.add(new Patron(new double[]{2.1,3.8},"uno"));
-        //conjFundamental.add(new Patron(new double[]{6.3,3.8},"dos"));
         conjFundamental.add(new Patron(new double[]{-4.1,3.8},"uno"));
         conjFundamental.add(new Patron(new double[]{-6.3,-3.8},"dos"));
         conjFundamental.add(new Patron(new double[]{-4.8,4.2},"uno"));
@@ -38,7 +35,5 @@ public class Main {
     }
     public static void main(String[] args) {
         Main.cap();
-
-
     }
 }
